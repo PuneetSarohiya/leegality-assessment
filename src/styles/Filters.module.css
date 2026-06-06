@@ -1,0 +1,71 @@
+.sidebar {
+  background: #fff;
+  padding: 0;
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.section {
+  margin-bottom: 24px;
+}
+
+.section h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.priceInputs {
+  display: flex;
+  gap: 8px;
+}
+
+.priceInput {
+  flex: 1;
+  height: 36px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  padding: 0 10px;
+  outline: none;
+  font-size: 13px;
+  width: 100%;
+}
+
+.priceInput:focus {
+  border-color: #1677ff;
+}
+
+.checkboxContainer {
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.checkboxContainer::-webkit-scrollbar {
+  width: 4px;
+}
+
+.checkboxContainer::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+  border-radius: 20px;
+}
+
+.filterCount {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #1677ff;
+  color: white;
+  font-size: 11px;
+  margin-left: 6px;
+}

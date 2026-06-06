@@ -1,0 +1,33 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.wrapper input {
+  display: none;
+}
+
+.checkmark {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  position: relative;
+}
+
+.wrapper input:checked + .checkmark {
+  background: #1677ff;
+  border-color: #1677ff;
+}
+
+.wrapper input:checked + .checkmark::after {
+  content: "✓";
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  left: 3px;
+  top: -1px;
+}
