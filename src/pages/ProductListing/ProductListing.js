@@ -58,7 +58,7 @@ function ProductListing() {
     if (!categories.length) {
       dispatch(fetchCategories());
     }
-  }, [categories.length]);
+  }, [dispatch,categories.length]);
 
   useEffect(() => {
   if (selectedCategory) {
@@ -113,7 +113,7 @@ function ProductListing() {
   ]);
 
   const totalPages = Math.ceil(
-    filteredProducts.length / productsPerPage
+    totalCount / productsPerPage
   );
 
   const currentProducts = filteredProducts.slice(
