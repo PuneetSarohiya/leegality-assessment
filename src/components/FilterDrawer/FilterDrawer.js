@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Filters from "../Filters/Filters";
 import styles from "../../styles/FilterDrawer.module.css";
 
