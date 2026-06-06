@@ -78,7 +78,7 @@ export function fetchAllProductDetails(payload) {
       const res = await callApi("products", "get");
 
       dispatch(loadProductsDetails(res.products));
-      dispatch(totalProductsCounts(res.total));
+      dispatch(totalProductsCounts(res.limit));
       showNotification("Product List Fetched Successfully", "success");
       dispatch(loadingstate(false));
     } catch (error) {
@@ -113,7 +113,7 @@ export function fetchProductsByCategory(category) {
       const res = await callApi(`products/category/${category}`, "get");
 
       dispatch(loadProductsDetails(res.products));
-      dispatch(totalProductsCounts(res.total));
+      dispatch(totalProductsCounts(res.limit));
       dispatch(loadingcategorystate(false));
     } catch (error) {
       console.log(error);
